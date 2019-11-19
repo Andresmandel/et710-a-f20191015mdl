@@ -30,6 +30,11 @@ app.config(function($routeProvider) {
        controller: 'AdamController',
        templateUrl: 'app/views/services.html'
      })
+     .when('/video',
+     {
+        controller: 'Videocontroller',
+        templateurl: 'app/views/video.html'
+     })
 });
 app.controller('WorksController', function($scope){
   $scope.customerID = 5;
